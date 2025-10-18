@@ -10,29 +10,122 @@
   <body>
     <section class="main-app">
       <h1>Calculator</h1>
-      <div class="screen"></div>
+      <div class="screen-container"><p id="screen"></p></div>
       <div class="buttons">
         <button class="button orange-btn" id="clear-btn" onclick="clearAll()">
           C
         </button>
-        <button class="button dark-orange-btn" id="devide-btn">/</button>
-        <button class="button dark-orange-btn" id="multiply-btn">*</button>
-        <button class="button dark-orange-btn" id="subtract-btn">-</button>
-        <button class="button blue-btn" id="seven-btn">7</button>
-        <button class="button blue-btn" id="eight-btn">8</button>
-        <button class="button blue-btn" id="nine-btn">9</button>
-        <button class="button dark-orange-btn" id="add-btn">+</button>
-        <button class="button blue-btn" id="four-btn">4</button>
-        <button class="button blue-btn" id="five-btn">5</button>
-        <button class="button blue-btn" id="six-btn">6</button>
-        <button class="button teal-btn" id="equals-btn">=</button>
-        <button class="button blue-btn" id="one-btn">1</button>
-        <button class="button blue-btn" id="two-btn">2</button>
-        <button class="button blue-btn" id="three-btn">3</button>
-        <button class="button blue-btn" id="zero-btn">0</button>
-        <button class="button blue-btn" id="dot-btn">.</button>
+        <button
+          class="button dark-orange-btn"
+          id="devide-btn"
+          onclick="addCharacter('/')"
+        >
+          /
+        </button>
+        <button
+          class="button dark-orange-btn"
+          id="multiply-btn"
+          onclick="addCharacter('*')"
+        >
+          *
+        </button>
+        <button
+          class="button dark-orange-btn"
+          id="subtract-btn"
+          onclick="addCharacter('-')"
+        >
+          -
+        </button>
+        <button
+          class="button blue-btn"
+          id="seven-btn"
+          onclick="addCharacter('7')"
+        >
+          7
+        </button>
+        <button
+          class="button blue-btn"
+          id="eight-btn"
+          onclick="addCharacter('8')"
+        >
+          8
+        </button>
+        <button
+          class="button blue-btn"
+          id="nine-btn"
+          onclick="addCharacter('9')"
+        >
+          9
+        </button>
+        <button
+          class="button dark-orange-btn"
+          id="add-btn"
+          onclick="addCharacter('+')"
+        >
+          +
+        </button>
+        <button
+          class="button blue-btn"
+          id="four-btn"
+          onclick="addCharacter('4')"
+        >
+          4
+        </button>
+        <button
+          class="button blue-btn"
+          id="five-btn"
+          onclick="addCharacter('5')"
+        >
+          5
+        </button>
+        <button
+          class="button blue-btn"
+          id="six-btn"
+          onclick="addCharacter('6')"
+        >
+          6
+        </button>
+        <button class="button teal-btn" id="equals-btn" onclick="calculate()">
+          =
+        </button>
+        <button
+          class="button blue-btn"
+          id="one-btn"
+          onclick="addCharacter('1')"
+        >
+          1
+        </button>
+        <button
+          class="button blue-btn"
+          id="two-btn"
+          onclick="addCharacter('2')"
+        >
+          2
+        </button>
+        <button
+          class="button blue-btn"
+          id="three-btn"
+          onclick="addCharacter('3')"
+        >
+          3
+        </button>
+        <button
+          class="button blue-btn"
+          id="zero-btn"
+          onclick="addCharacter('0')"
+        >
+          0
+        </button>
+        <button
+          class="button blue-btn"
+          id="dot-btn"
+          onclick="addCharacter('.')"
+        >
+          .
+        </button>
         <p id="signature">Nsuku Goldwin</p>
       </div>
     </section>
+    <script src="./index.js"></script>
   </body>
 </html>

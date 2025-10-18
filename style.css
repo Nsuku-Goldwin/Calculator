@@ -25,11 +25,18 @@ h1 {
   text-align: center;
   margin: 1.5rem;
 }
-.screen {
+.screen-container {
   background-color: black;
   height: 60px;
   border-radius: 8px;
+  padding: 20px;
   margin: 1.5rem 0;
+  text-align: end;
+}
+#screen {
+  background-color: black;
+
+  color: green;
 }
 .buttons {
   display: grid;
